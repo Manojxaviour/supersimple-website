@@ -3,8 +3,444 @@
 
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="animation.css">
+    <!-- <link rel="stylesheet" href="animation.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(https://images.unsplash.com/photo-1517639493569-5666a7b2f494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.highway {
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(https://us.123rf.com/450wm/andreykuzmin/andreykuzmin1605/andreykuzmin160500066/56495798-asphalt-highway-road-marks-top-view.jpg?ver=6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 3s linear infinite;
+}
+
+@keyframes highway {
+    100% {
+        transform: translateX(-3400px);
+    }
+}
+
+.city {
+    height: 100%;
+    width: 500%;
+    background-image: url(./city.jpg);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+
+}
+
+@keyframes city {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+
+.flower {
+    height: 301px;
+    width: 500%;
+    background-image: url();
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+
+@keyframes flower {
+    100% {
+        transform: translateX(-1400px);
+    }
+}
+
+.car {
+    width: 458px;
+    left: 84%;
+    bottom: 91px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.car img {
+    width: 87%;
+    display: inline-block;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car {
+    100% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(-1px);
+    }
+
+    0% {
+        transform: translateY(-1px);
+    }
+}
+.superman img{
+    width: 250px;
+    z-index: 2;
+    display: block;
+    position: absolute;
+    animation:superman 3s linear infinite;
+    top: 0;
+}
+@keyframes superman {
+    100% {
+        transform: translateY(-5px);
+    }
+
+    50%{
+        transform: translateY(5px);
+    }
+
+    0% {
+        transform: translateY(-5px);
+    }
+}
+
+.wheel {
+    left: 50%;
+    bottom: 179px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img {
+    animation: wheel .5s linear infinite;
+}
+
+.back-wheel {
+    left: 272px;
+    bottom: -77px;
+    width: 69px;
+    height: 69px;
+    position: absolute;
+}
+
+.front-wheel {
+    left: 517px;
+    width: 69px;
+    height: 69px;
+    position: absolute;
+    display: inline-block;
+}
+
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.full-light{
+    position: absolute;
+    left: 0;
+
+}
+.light img{
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    top: 235px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light2 img{
+    position: absolute;
+    z-index: 2;
+    height: 200px;
+    left: 200px;
+    top: 235px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light3 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 408px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light4 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 609px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light5 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 815px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light6 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 1017px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light7 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 1209px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light8 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 1425px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light9 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 1621px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light10 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 1821px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light11 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 2085px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light12 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 2285px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light13 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 2500px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light14 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 2700px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light15 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 2900px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+.light16 img{
+    position: absolute;
+    z-index: 1;
+    height: 200px;
+    top: 235px;
+    left: 3100px;
+    background: repeat-x;
+    animation: highway 5s linear infinite;
+}
+@keyframes lightlight2light3light4light5light6light7light8light9light10light11light12 {
+    100% {
+        transform: translateX(-3400px);
+    }
+}
+
+.fence img{
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 390%;
+    top: 340px;
+    background: repeat-x;
+    animation: fence 5s linear infinite;
+}
+@keyframes fence{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.batman img{
+    width: 400px;
+    height: 200px;
+    z-index: 2;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    animation:batman 3s linear infinite;
+}
+@keyframes batman {
+    100% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(1px);
+    }
+
+    0% {
+        transform: translateY(-1px);
+    }
+   
+}
+.bat-front img{
+    position: absolute;
+    z-index: 2; 
+    bottom: 65px;
+    height:75px;
+    left: 51px;
+    width: 76px;
+    animation: bat-front .5s linear infinite;
+}
+@keyframes bat-front {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.bat-back img{
+    position: absolute;
+    z-index: 2; 
+    bottom: 61px;
+    height:66px;
+    left: 282px;
+    width: 66px;
+    animation: bat-back .5s linear infinite;
+}
+@keyframes bat-back {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media only screen and (max-width:500px) {
+    .city{
+        top:-108px;
+        width: 1900px;
+    }
+    .car img{
+        width: 148px;
+        height: 96px;
+        margin-left: 163px;
+        margin-bottom: -24px;
+    }
+    .back-wheel{
+        left: 109px;
+        width: 42px;
+        height: 42px;
+        bottom: -99px;
+    }
+    .front-wheel {
+        left: 201px;
+        width: 42px;
+        height: 42px;
+        bottom: -102px;
+    }
+    .batman img{
+        width: 252px;
+        height: 129px;
+        left: -40px;
+    }
+    .bat-front img{
+        width: 52px;
+        height: 52px;
+        left: -12px;
+        bottom: 50px;
+    }
+    .bat-back img{
+        width:42px;
+        height: 42px;
+        left: 139px;
+        bottom: 50px;
+    }
+    .superman img{
+        width: 147px;
+        height: 68px;
+        top: 105px;
+    }
+    .highway{
+        width: 780%;
+    }
+    .fence img{
+        width: 780%;
+    }
+    .full-light{
+        left: 220px;
+    }
+}
+
+    </style>
 </head>
 
 <body>
